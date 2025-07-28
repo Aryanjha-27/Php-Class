@@ -1,32 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
     <style>
-        body{
-                background-color: cyan;
-                text-align: center;
-                height: 120vh;
-                 width: 100%;
-                    background-image: url(https://i.pinimg.com/736x/fc/af/b4/fcafb426f8169fcda04aebcefaf4a7fb.jpg);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-    
-        }
-        div.main,
-        p#test{
-                background-color: rgb(93, 13, 221);
-    
-        }
-
+      body {
+        background-color: cyan;
+        /* text-align: center; */
+        height: 120vh;
+        width: 100%;
+        /* background-image: url(https://i.pinimg.com/736x/fc/af/b4/fcafb426f8169fcda04aebcefaf4a7fb.jpg); */
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      /* div.main,
+      p#test {
+        background-color: rgb(93, 13, 221);
+      } */
+      a:visited {
+        color: gold;
+      }
+      a:link {
+        color: red;
+      }
+      a:hover {
+        color: cyan;
+      }
+      a:active {
+        color: white;
+      }
+      #div3 {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background: rgb(17, 2, 2);
+        left: 200px;
+      }
+      #div4 {
+        position: relative;
+        height: 50px;
+        width: 50px;
+        background: rgb(185, 91, 91);
+        left: 120px;
+        float: inline-end;
+      }
+      #parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 80px;
+        background: lightgray;
+        border: 1px solid black;
+        height: 300px;
+        width: 300px;
+      }
+      #parent div {
+        background-color: lightblue;
+        border: 1px solid gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     </style>
-</head>
-<body>
-    <div class="main bca" style="background-color: beige;padding: 30px 60px;margin: 100px">
-        <p id="Test" style="color: burlywood;">This is a paragraph</p>
-        
+  </head>
+  <body>
+    <div
+      class="main bca"
+      style="background-color: beige; padding: 30px 60px; margin: 100px"
+    >
+      <p
+        id="Test"
+        style="
+          color: burlywood;
+          font-variant: small-caps;
+          font-size: 20px;
+          font-family: cursive;
+          font-style: italic;
+          font-weight: 600;
+        "
+      >
+        I'M Batman
+      </p>
+      <a href=""
+        >link Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+        cupiditate.
+      </a>
     </div>
-</body>
+    <br />
+    <div
+      style="
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background: red;
+        left: 100px;
+        z-index: 15;
+      "
+    >
+      division 1
+    </div>
+
+    <div
+      style="
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background: blue;
+        left: 100px;
+        z-index: 10;
+      "
+    >
+      division 2
+    </div>
+    <br /><br /><br /><br /><br /><br /><br />
+    <div id="div3"><div id="div4"></div></div>
+    <br /><br /><br /><br /><br />
+    <div id="parent">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+      <div>Item 4</div>
+      <div>Item 5</div>
+      <div>Item 6</div>
+      <div>Item 7</div>
+      <div>Item 8</div>
+      <div>Item 9</div>
+    </div>
+    <br /><br /><br /><br />
+    <div id="flex">
+      <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+    <div class="grid-conatiner">
+      <div class="grid-item header">Header</div>
+      <div class="grid-item sidebar">Sidebar</div>
+      <div class="grid-item main">Main Content</div>
+      <div class="grid-item footer">Footer</div>
+    </div>
+  </body>
 </html>
